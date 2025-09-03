@@ -4,7 +4,7 @@ public class Persona {
     private String id;
     private String nombre;
     private int edad;
-    
+    // Metodos
     public Persona(){}
 
     public String getId() {
