@@ -11,4 +11,6 @@ package com.tecnm.miniconsultorio.modelos;
 public class Enfermera extends Persona{
    int numeroEnfermera;
    String areaAtencion;
+   
+   
 }
