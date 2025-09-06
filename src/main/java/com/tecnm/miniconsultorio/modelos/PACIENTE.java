@@ -1,17 +1,19 @@
-
 package com.tecnm.miniconsultorio.modelos;
-public class Paciente {
+
+import java.util.List;
+
+public class Paciente extends Persona{
     
        double altura;
        int peso;
        float temperatura;
-       String enfermedades;
+       List<Enfermedad> enfermedades;
 
 
        public static void main (String [] args){}
         
-        public Paciente (double altura,int peso,float temperatura,String enfermedades){
-            
+        public Paciente (String nombre,String id, int edad, double altura,int peso,float temperatura,String enfermedades){
+            super(id,nombre,edad);
             this.altura = altura;
             this.peso = peso;
             this.temperatura = temperatura;
@@ -28,7 +30,7 @@ public class Paciente {
        public float gettemperatura(){
            return temperatura;
        }
-       public String getenfermedades(){
+       public List<String> getenfermedades(){
            return enfermedades;
        }
        
@@ -41,7 +43,7 @@ public class Paciente {
        public void settemperatura(float temperatura){
            this.temperatura = temperatura;
        }
-        public void settenfermedades(String enfermedades){
+        public void settenfermedades(List<String> enfermedades){
            this.enfermedades = enfermedades;
        }
        
@@ -53,8 +55,7 @@ public class Paciente {
             System.out.println("Su peso es de: "+peso);
             System.out.println("Su temperatura es de: "+temperatura);
             System.out.println("Sus emfermedades son las siguintes: "+enfermedades);
-           
-        
+          
         }
   }
   
