@@ -4,13 +4,22 @@
  */
 package com.tecnm.miniconsultorio.modelos;
 
+import java.util.List;
+
 /**
  *
  * @author rodas
  */
 public class Enfermera extends Persona{
-   int numeroEnfermera;
-   String areaAtencion;
+    
+  private int numeroEnfermera;
+   private String areaAtencion;
+   private List<paciente> pacientesAsignados;
    
+   public Enfermera(String nombre, int edad, String id, int numeroEnfermera, String areaAtencion, List<paciente> pasientesAsignados){
+       
+   
+               
+   }
    
 }
