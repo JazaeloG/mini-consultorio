@@ -11,7 +11,7 @@ public class Paciente extends Persona{
 
 
       
-        public Paciente (String nombre,String id, int edad, double altura,int peso,float temperatura,String enfermedades){
+        public Paciente (String nombre,String id, int edad, double altura,int peso,float temperatura,List<Enfermedad> enfermedades){
             super(id,nombre,edad);
             this.altura = altura;
             this.peso = peso;
@@ -29,7 +29,7 @@ public class Paciente extends Persona{
        public float gettemperatura(){
            return temperatura;
        }
-       public List<String> getenfermedades(){
+       public List<Enfermedad> getenfermedades(){
            return enfermedades;
        }
        
@@ -42,7 +42,7 @@ public class Paciente extends Persona{
        public void settemperatura(float temperatura){
            this.temperatura = temperatura;
        }
-        public void settenfermedades(List<String> enfermedades){
+        public void settenfermedades(List<Enfermedad> enfermedades){
            this.enfermedades = enfermedades;
        }
        
