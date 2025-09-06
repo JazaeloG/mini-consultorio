@@ -1,5 +1,6 @@
 import  java.util.ArrayList;
 import java.util.List;
+
 public class Enfermedad  {
 
     private int  idEnfermedad;
