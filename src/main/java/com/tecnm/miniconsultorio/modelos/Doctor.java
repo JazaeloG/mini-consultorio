@@ -14,9 +14,12 @@ public class Doctor extends Persona{
     String universidadDeEgreso;
     int anosdeExperiencia;
     
-    public Doctor(){
-        super();
-    }
+    public Doctor(String cedula, String universidadDeEgreso, int anosDeExperiencia) {
+    super();
+    this.cedula = cedula;
+    this.universidadDeEgreso = universidadDeEgreso;
+    this.anosdeExperiencia = anosDeExperiencia;
+}
 
     public String getCedula() {
         return cedula;
