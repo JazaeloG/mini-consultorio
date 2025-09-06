@@ -10,8 +10,7 @@ public class Paciente extends Persona{
        List<Enfermedad> enfermedades;
 
 
-       public static void main (String [] args){}
-        
+      
         public Paciente (String nombre,String id, int edad, double altura,int peso,float temperatura,String enfermedades){
             super(id,nombre,edad);
             this.altura = altura;
