@@ -6,6 +6,12 @@ public class Persona {
     private int edad;
     
     public Persona(){}
+    
+    public Persona(String id, String nombre, int edad){
+        this.edad = edad;
+        this.nombre = nombre;
+        this.id = id;
+    }
 
     public String getId() {
         return id;

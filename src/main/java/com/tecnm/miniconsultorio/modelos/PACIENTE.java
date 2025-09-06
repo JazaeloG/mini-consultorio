@@ -1,19 +1,22 @@
 
 package com.tecnm.miniconsultorio.modelos;
-public class PACIENTE {
+public class Paciente {
     
        double altura;
        int peso;
        float temperatura;
        String enfermedades;
+
+
+       public static void main (String [] args){}
         
-        public PACIENTE (double altura,int peso,float temperatura,String enfermedades){
+        public Paciente (double altura,int peso,float temperatura,String enfermedades){
             
             this.altura = altura;
             this.peso = peso;
             this.temperatura = temperatura;
             this.enfermedades = enfermedades;
-            
+             
         }  
         
        public double getaltura(){
@@ -41,6 +44,7 @@ public class PACIENTE {
         public void settenfermedades(String enfermedades){
            this.enfermedades = enfermedades;
        }
+       
         
         public void mostarinformacion(){
             
