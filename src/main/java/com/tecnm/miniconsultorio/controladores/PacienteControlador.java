@@ -4,7 +4,7 @@ import com.tecnm.miniconsultorio.modelos.Paciente;
 import java.util.ArrayList;
 
 public class PacienteControlador {
-    private ArrayList<Paciente> pacientes = new ArrayList<>();
+    private final ArrayList<Paciente> pacientes = new ArrayList<>();
 
     // Método para crear paciente con validación
     public String crearPaciente(Paciente datosPaciente) {
